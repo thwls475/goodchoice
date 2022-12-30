@@ -183,7 +183,7 @@ header section #btn-search-bar {
 .main-link .main-link-ul .main-link-ul-list {
   float: left;
   width: 163px;
-  margin left: 30px;
+  left: 30px;
 }
 
 .main-link .main-link-ul .main-link-ul-list a {
@@ -203,7 +203,7 @@ header section #btn-search-bar {
 
 .main-link .main-link-ul .main-link-ul-list a p {
   height: auto;
-  padding-top: 14px;
+  padding-top: 11px;
 }
 
 .main-link .icon-01 {

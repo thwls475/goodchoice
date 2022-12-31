@@ -70,11 +70,12 @@ header section .btn-search {
   cursor: pointer;
 }
 
+
 header section #btn-search-active {
-  right: 797px;
   position: relative;
   border: none;
   top: 22px;
+  left: 40px;
   z-index: 10;
   width: 30px;
   height: 30px;
@@ -82,10 +83,34 @@ header section #btn-search-active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 24px auto;
+  cursor: pointer;
 }
 
-header section #btn-search-bar {
+header section #search-active #wrap-input {
+  /* font-size: 18px;
+  height: 21px;
+  color: #fff;
+  background: none;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 4.5px;
+  width: 100%;
+  border: none; */
+  width: 725px;
+  height: 21px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,7 +131,8 @@ header section #btn-search-bar {
 }
 
 .nav-bar .nav-bar-1 {
-  margin-left: 27.5px;
+  margin-left: 57.5px;
+  margin-top: 1.5px;
 }
 
 
@@ -256,9 +282,12 @@ header section #btn-search-bar {
   overflow: hidden;
 }
 
+.recommend-ul {
+  display: flex;
+}
+
 .recommend .recommend-ul .recommend-ul-li {
   overflow: hidden;
-  float: left;
   position: relative;
   width: 473px;
   height: 162px;
@@ -269,18 +298,25 @@ header section #btn-search-bar {
 }
 
 .recommend .recommend-ul .recommend-ul-li a {
+  position: relative;
   display: block;
   height: 162px;
+  width: 261px;
   font-size: 17px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.56);
-  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+
+.recommend .recommend-ul #recommend-last {
+  margin-left: 16px;
 }
 
 .recommend .recommend-ul .recommend-ul-li img {
   position: relative;
   top: 0;
-  left: 0;
+  left: -186px;
   width: 162px;
   height: 162px;
 }
@@ -358,9 +394,9 @@ header section #btn-search-bar {
   text-align: center;
 }
 
-/* .event .swiper-container .swiper-pagination {
-  color: ;
-}  */
+.event .swiper-container .swiper-pagination {
+
+} 
 
 
 
@@ -493,3 +529,13 @@ footer address .order {
   display: block;
   padding: 6px 0;
 }
+
+
+/*
+1. 검색창 만들기 id= search-active
+2. 더보기 hover 적용
+3. 여기어때 소식 글시
+4. 이벤트 swiper 버튼 흰색으로 하고 조금 위로 옮기기
+5. footer에 SNS 만들기
+6. 스크롤 내리면 헤더가 빨강색에서 흰색으로 바뀜
+*/

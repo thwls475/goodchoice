@@ -1,8 +1,6 @@
 body {
-  font-family: 'Prerendard', 'Apple SD Gothic Neo', '맑은 고딕', 'sans-serif';
-  font-size: 14px;
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', 'sans-serif';
   line-height: 1;
-  color: rgba(0, 0, 0, 0.87);
   display: block;
 }
 
@@ -32,18 +30,17 @@ header {
   right: 0;
   height: 72px;
   background-color: #f7323f;
-  font-size: 14px;
   z-index: 99999;
 }
 
 header section {
   display: flex;
-  position: relative;
   width: 1024px;
   height: 64px;
   background: none;
   margin: 0 auto;
 }
+
 header section h1 {
   position: relative;
   top: 26px;
@@ -55,6 +52,7 @@ header section h1 {
   background-size: 96px auto;
 }
 
+/* origin search */
 header section .btn-search {
   position: relative;
   border: none;
@@ -70,43 +68,64 @@ header section .btn-search {
   cursor: pointer;
 }
 
-
-header section #btn-search-active {
+/* active search */
+header section .search-input input {
   position: relative;
   border: none;
-  top: 22px;
-  left: 40px;
-  z-index: 10;
-  width: 30px;
-  height: 30px;
-  background: url('//image.goodchoice.kr/images/web_v3/ico_srch_2.png');
+  background-color: transparent;
+  font-size: 18px;
+  top: 24px;
+  left: 108px;
+  height: 21px;
+  width: 721px;
+  outline: 0;
+}
+
+input::placeholder {
+  color: rgba(245,245,245,0.8);
+}
+
+header section .search-close {
+  left: 125px;
+  top: 2px;
+  position: relative;
+  border: none;
+  background: url(//image.goodchoice.kr/images/web_v3/ico_close_2.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 24px auto;
+  background-size: 20px auto;
   cursor: pointer;
 }
 
-header section #search-active #wrap-input {
-  /* font-size: 18px;
-  height: 21px;
-  color: #fff;
-  background: none;
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 4.5px;
-  width: 100%;
-  border: none; */
-  width: 725px;
-  height: 21px;
+header section .scroll-search {
+  position: absolute;
+  top: 72px;
+  margin-left: 206px;
+  width: 789px;
+  height: 353px;
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  overflow: scroll;
 }
 
+header section #scroll-search #scroll-search-content {
+  padding: 24px 20px 34px 20px;
+}
 
+header section #scroll-search #scroll-search-content .scroll-strong {
+  margin-bottom: 11px;
+  font-size: 14px;
+  font-weight: bold;
+}
 
+header section #scroll-search #scroll-search-content ul .scroll-li {
+  margin-bottom: 11px;
+}
 
-
-
-
-
+header section #scroll-search #scroll-search-content ul .scroll-li a {
+  font-size: 14px;
+  color: rgb(0, 121, 107);
+}
 
 
 
@@ -143,7 +162,7 @@ header section #search-active #wrap-input {
   letter-spacing: 0;
 }
 
-.nav-bar li a {
+.nav-bar li .nav-content {
   display: inline-block;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.8);
@@ -160,17 +179,33 @@ header section #search-active #wrap-input {
   cursor: pointer;
 }
 
+.nav-bar .see-more #btn-more {
+  margin-bottom: 15px;
+}
+
 .nav-bar .see-more #btn-more #btn-more-text {
   margin-top: -2.5px;
   margin-left: 6px;
   margin-right: 6px;
 }
 
+.nav-bar .see-more #over {
+  background-color: green;
+  width: 125px;
+  height: 136px;
+  padding: 32px 32px 32px 10px;
+}
 
+/* .nav-bar .see-more .over .over-content {
+  text-align: center;
+  
+} */
 
+.nav-bar .see-more #over .over-centent a {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
 
-
-
+}
 
 
 
@@ -292,20 +327,15 @@ header section #search-active #wrap-input {
   width: 473px;
   height: 162px;
   margin: 0 0 16px 0;
-  padding: 0 24px 0 186px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
 }
 
 .recommend .recommend-ul .recommend-ul-li a {
-  position: relative;
-  display: block;
-  height: 162px;
-  width: 261px;
+  display: flex;
   font-size: 17px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.56);
-  box-sizing: inherit;
 }
 
 
@@ -314,11 +344,15 @@ header section #search-active #wrap-input {
 }
 
 .recommend .recommend-ul .recommend-ul-li img {
-  position: relative;
+  display: flex;
   top: 0;
-  left: -186px;
   width: 162px;
   height: 162px;
+}
+
+.recommend .recommend-ul-li .text-box {
+  display: block;
+  padding: 0 24px;
 }
 
 .recommend .recommend-ul .recommend-ul-li a .bold {
@@ -329,6 +363,7 @@ header section #search-active #wrap-input {
   font-weight: normal;
   color: rgb(0,121,107);
 }
+
 
 .app {
   display: block;
@@ -393,17 +428,6 @@ header section #search-active #wrap-input {
   position: relative;
   text-align: center;
 }
-
-.event .swiper-container .swiper-pagination {
-
-} 
-
-
-
-
-
-
-
 
 
 
@@ -530,12 +554,3 @@ footer address .order {
   padding: 6px 0;
 }
 
-
-/*
-1. 검색창 만들기 id= search-active
-2. 더보기 hover 적용
-3. 여기어때 소식 글시
-4. 이벤트 swiper 버튼 흰색으로 하고 조금 위로 옮기기
-5. footer에 SNS 만들기
-6. 스크롤 내리면 헤더가 빨강색에서 흰색으로 바뀜
-*/

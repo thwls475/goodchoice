@@ -24,25 +24,82 @@
       <button class="btn-search">
       </button>
 
-    
-<!-- 
-      <div id="search-active">
-        <button id="btn-search-active">
-        </button>
-        <div id="wrap-input">
-          <input type="text" placeholder="지역, 숙소명" autocomplete="off">
+
+      <!-- active search -->
+      <!-- <div class="search-input">
+        <input type="text" placeholder="지역, 숙소명" autocomplete="off">
+      </div>
+      <button class="search-close">
+      </button>
+
+      <div id="scroll-search" class="scroll-search">
+        <div id="scroll-search-content" class="scroll-search-content>">
+          <div class="scroll-strong">추천 검색어</div>
+          <ul>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%98%A4%EC%85%98%EB%B7%B0">
+                오션뷰</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%ED%8C%8C%ED%8B%B0%EB%A3%B8">
+                파티룸</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%95%BC%EC%99%B8%EC%88%98%EC%98%81%EC%9E%A5">
+                야외수영장
+              </a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%86%8D%EC%B4%88">
+                속초
+              </a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%95%A0%EA%B2%AC%EB%8F%99%EB%B0%98%ED%8E%9C%EC%85%98">
+                  애견동반펜션</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%97%AC%EC%88%98">
+                여수</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%A0%9C%EC%A3%BC%EB%8F%84">
+                제주도</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EC%95%88%EB%A9%B4%EB%8F%84">
+                안면도</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EB%82%A8%ED%95%B4">
+                남해</a>
+            </li>
+            <li class="scroll-li">
+              <a href="https://www.goodchoice.kr/product/result?keyword=%EB%B6%80%EC%82%B0">
+                부산</a>
+            </li>
+          </ul>
         </div>
       </div> -->
 
-      
+
+
+
+
+
+
+
+
+
+
       <ul class="nav-bar">
-        <li class="nav-bar-1">
-          <a href="https://www.goodchoice.kr/product/srp">
+        <li>
+          <a class="nav-content" href="https://www.goodchoice.kr/product/srp">
             <span>내주변</span>
           </a>
         </li>
         <li>
-          <a href="https://www.goodchoice.kr/user/login?returnUrl=my%2FreserveList">
+          <a class="nav-content" href="https://www.goodchoice.kr/user/login?returnUrl=my%2FreserveList">
             <span>예약내역</span>
           </a>
         </li>
@@ -50,38 +107,39 @@
         <li class="see-more">
           <button id="btn-more" type="button">
             <span id="btn-more-text">더보기</span>
-          </button>
-          <ul class="over" style="display: none; opacity: 1;">
-            <li>
+            
+          <!-- </button>
+          <ul id="over" style="display: block; opacity: 1;">
+            <li class="over-content">
               <a href="https://www.goodchoice.kr/more/notice">공지사항</a>
             </li>
-            <li>
+            <li class="over-content">
               <a href="https://www.goodchoice.kr/more/event">이벤트</a>
             </li>
-            <li>
+            <li class="over-content">
               <a href="https://www.goodchoice.kr/more/faq">자주 묻는 질문</a>
             </li>
-            <li>
+            <li class="over-content">
               <a href="https://www.goodchoice.kr/more/inquiry">1:1 문의</a>
             </li>
-            <li>
+            <li class="over-content">
               <a href="https://www.goodchoice.kr/more/terms">약관 및 정책</a>
             </li>
           </ul>
-        </li>
+        </li> -->
 
         <li>
-          <a href="https://www.goodchoice.kr/user/login">
+          <a class="nav-content" href="https://www.goodchoice.kr/user/login">
             <span>로그인</span>
           </a>
         </li>
-
       </ul>
+
     </section>
   </header>
 
 
-
+  
 
 <!-- content -->
 
@@ -143,7 +201,6 @@
 
 
 
-
     <!-- recommend -->
     <div class="recommend">
       <h2>여기어때 소식</h2>
@@ -151,24 +208,29 @@
         <li class="recommend-ul-li">
           <a href="https://www.goodchoice.kr/b2b/intro" target="_blank">
             <img src="./recommend-1.png" alt="여기어때 비즈니스">
-            <p class="bold">여기어때 비즈니스</p>
+            <div class="text-box">
+              <p class="bold">여기어때 비즈니스</p>
             출장부터 복지까지
             <br>
             여기어때 비즈니스로 스마트하게
+            </div>
           </a>
         </li>
         
         <li class="recommend-ul-li" id="recommend-last">
           <a href="https://www.goodchoice.kr/font" target="_blank">
             <img src="./recommend-2.png" alt="여기어때 서체 출시">
-            <p class="bold">여기어때 서체 출시</p>
-            젊고 당당한 여기어때 잘난체
-            <br>
-            지금 다운로드 받으세요!
+            <div class="text-box">
+              <p class="bold">여기어때 서체 출시</p>
+              젊고 당당한 여기어때 잘난체
+              <br>
+              지금 다운로드 받으세요!
+            </div>
           </a>
         </li>
       </ul>
     </div>
+
 
 
 
